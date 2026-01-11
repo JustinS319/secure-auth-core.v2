@@ -9,4 +9,6 @@ def startUP():
                 return f"Error during setup: {result}"
 def MainCLI():
         print("Welcome to the interactive CLI mode of the Auth core system.")
-        print("")
+        print("This an interactive user authentication system that utilizes PostgreSQL.")
+        print("If this is your first time running the program setup will be run creating everything needed for the system to run.")
+        
