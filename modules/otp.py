@@ -28,7 +28,7 @@ def generate_totp(user, enable = False):
     if not rows:
         generate_secret(user_id)
         _, rows = connect("Select secret, enabled From two_factor WHERE user_id = %s",(user_id,))
-    enabled = rows[0][0]
+    enabled = rows[0][1]
     if not enabled:
         if enable == False:
             return False
