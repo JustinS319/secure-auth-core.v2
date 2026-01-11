@@ -1,3 +1,4 @@
 *.env
 sqlvenv
 __pycache__
+venv
