@@ -1,0 +1,5 @@
+python-dotenv
+psycopg[binary]
+argon2-cffi
+pyotp
+qrcode
