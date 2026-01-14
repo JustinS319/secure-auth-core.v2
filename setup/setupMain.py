@@ -1,6 +1,9 @@
-from .createDotEnv import create_config
-from .buildSQLtables import innit
-from .addRoles import addROLES
+from pathlib import Path
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from createDotEnv import create_config
+from buildSQLtables import innit
+from addRoles import addROLES
 from pathlib import Path
 FILE_PATH = Path.home() / ".config" / "myDbConfig" / "setupComplete.flag"
 def run_setup(f = FILE_PATH)-> tuple[bool, str]:
